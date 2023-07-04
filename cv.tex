@@ -1,0 +1,224 @@
+% Based on autoCV by Jitin Nair
+% https://www.overleaf.com/latex/templates/autocv/scfvqfpxncwb
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{url}
+\usepackage{parskip} 	
+
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage{supertabular} %to prevent spillover of tabular into next pages
+\usepackage{tabularx} %tabularx environment
+\usepackage{enumitem}
+\usepackage{dirtytalk} %quotation marks
+\usepackage{ulem}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[unicode, draft=false]{hyperref}
+\usepackage{color} %colors
+    \definecolor{custom}{rgb}{0,0.2,0.6}
+    \definecolor{back}{rgb}{0.85, 0.89, 0.95}
+    \definecolor{fore}{rgb}{0.56, 0.67, 0.86}
+\usepackage{hyperref} %hyperlinks
+   \hypersetup{colorlinks=true,allcolors=custom}
+\usepackage{fontawesome5} %social icons
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} % centered version of 'X' col. type
+
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\setlength\bibitemsep{1em}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+% HEADER
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\LARGE{\textsc{Romain Tilhac}} \\
+Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
+\href{mailto:romain.tilhac@csic.es}{\raisebox{-0.05\height}\faEnvelope \ romain.tilhac@csic.es} \ $|$ \
+\href{https://orcid.org/0000-0001-5132-6228}{\raisebox{-0.05\height}\faOrcid \ 0000-0001-5132-6228} \ $|$ \
+\href{https://romaintilhac.github.io}{\raisebox{-0.05\height}\faGlobe \ romaintilhac.github.io} \ $|$ \ 
+\href{https://github.com/romaintilhac}{\raisebox{-0.05\height}\faGithub\ romaintilhac}
+\end{tabularx}
+
+% RESEARCH INTERESTS
+\section{Research interests}
+
+    {My research focuses on the role of melt generation, migration and melt-rock interaction in the evolution and dynamics of the Earth's mantle. My approach combines a wide range of analytical techniques and numerical models to develop a petrologically consistent approach to geochemistry. One of my main interests is the formation and recycling of pyroxenites and their impact on the genesis of oceanic basalts and the geochemical cycles.}
+
+% EDUCATION
+\section{Education}
+
+    {\bf PhD in Petrology and Geochemistry}, Macquarie University
+    \hfill {2013 - 2017}\\
+    {\footnotesize Co-tutelle with Paul Sabatier University (Toulouse)}
+    \hfill \textit{Sydney, Australia}\\
+    \say{\textit{Petrology and geochemistry of pyroxenites from the Cabo Ortegal Complex, Spain}}
+    
+    {\bf BSc \& MSc in Earth and Planetary Sciences}, Paul Sabatier University
+    \hfill {2006 - 2011}\\
+    \uline{Top of the class, With honours}
+    \hfill \textit{Toulouse, France}
+     
+% EXPERIENCE
+\section{Employment history}
+    
+    \textbf{Post-doctoral researcher \textit{JdC Fellow}}
+    \hfill {Since 2020}\\
+    Instituto Andaluz de Ciencias de la Tierra (IACT)/CSIC, with \textbf{C. Garrido}
+    \hfill \textit{Granada, Espagne}
+     
+    \textbf{Post-doctoral researcher \textit{JSPS Fellow}}
+    \hfill {2020}\\
+    Kanazawa University, with \textbf{T. Morishita}
+    \hfill \textit{Kanazawa, Japan}
+    
+    \textbf{\textit{Research Associate}}
+    \hfill {2017 - 2019}\\
+    ARC Centre of Excellence CCFS/GEMOC, with \textbf{S.Y. O'Reilly} and \textbf{W.L. Griffin}
+    \hfill \textit{Sydney, Australie}\\
+    \textit{TerraneChron} Manager
+    
+% SKILLS
+\section{Scientific skills}
+
+    \textbf{Analytical techniques} 
+    \begin{itemize}[itemsep=0pt,parsep=2pt]
+        \item Igneous \& metamorphic petrography, mineralogy (microscopy, SEM, thermobarometry, micro-thermometry)
+        \item Mineral separation (magnetic, heavy-liquid \& Selfrag disagregation, picking)
+        \item Wet chemistry (acid/Carius-tube digestion, column chromatography, Re-Os solvent extraction, micro-distillation, isotope dilution)
+        \item Elemental geochemistry (solution/\textit{in situ} analysis of major \& trace elements by EMP, [LA]-ICP-MS, major- \& trace-element mapping by LA-ICP-MSI)
+        \item Isotope geochemistry \& geochronology (analysis of radiogenic isotopes Rb-Sr, Sm-Nd, Lu-Hf, Re-Os by TIMS (Triton) \& MC-ICP-MS (Nu Plasma, Neptune), U-Pb/Lu-Hf zircon dating by LA-[MC]-ICP-MS)
+    \end{itemize}
+    
+    \textbf{Numerical techniques}
+    \begin{itemize}[itemsep=0pt,parsep=2pt]
+        \item Modelling of elemental \& isotopic fractionation associated with magmatic processes
+        \item Development of diffusion, percolation-diffusion, open-system melting \& mixed-source melting models
+        \item Thermo-mecanical (reactive transport) modelling, thermodynamic modelling (pMELTS, PerpleX, Melt-PX)
+        \item Coding languages: Matlab, Python, VBA (development of \textit{Geoch’Em} for Excel), Julia, Fortran, HTML
+        
+    \end{itemize}
+    
+    \textbf{Field geology}
+    \begin{itemize}[itemsep=0pt,parsep=2pt]
+        \item Magmatic and metamorphic petrology of mafic \& ultramafic terranes
+        \item Field experiences: Pyrenees, Galicia, S. Spain, Italy, Czech Republic, California, Australia, Newfoundland
+        \item Micro-tectonics, sampling, mapping
+    \end{itemize}
+
+% GRANTS & REWARDS
+\section{Awards \& grants}
+
+    \textbf{Research grant OCEANS (Principal Investigator)}
+    \hfill {Sept. 2022}\\
+    \say{\textit{M\underline{o}delling ar\underline{c} r\underline{e}cycling in the oceanic m\underline{a}ntle using radioge\underline{n}ic i\underline{s}otope systems}}\\
+    Spanish Ministry of Sciences, Innovation and Universities - 45 k€ (2 years)
+    
+    \textbf{Post-doctoral fellowship \textit{Juan de la Cierva (Incorporación)}}
+    \hfill {August 2021}\\
+    Spanish Ministry of Sciences, Innovation and Universities (3 years)
+    
+    \textbf{Post-doctoral fellowship \textit{Juan de la Cierva (Formación)}}
+    \hfill {Dec. 2019}\\
+    Spanish Ministry of Sciences, Innovation and Universities (2 years)
+    
+    \textbf{Post-doctoral fellowship JSPS (Short-term)}
+    \hfill {Oct. 2019}\\
+    \textit{Japan Society for the Promotion of Science} (1 year)
+    
+    \textbf{PhD thesis ranked in the top 10\% thesis examined by the panel}
+    \hfill {Sept. 2017}\\
+    Macquarie University (Sydney)
+    
+    \textbf{Doctoral iMQRES scholarship}
+    \hfill {Feb. 2012}\\
+    International Macquarie Research Excellence Scholarship (3.5 years)
+
+% OTHER ACTIVITIES
+\section{Other activities}
+
+    \textbf{Invited seminars \& presentations}
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+        \item Goethe University (Geosciences colloquium series)
+            \hfill \textit{Francfort}, {January 2023}
+        \item CNRS Forsterite workshop 2021 (Modelling of crust-mantle elemental transfers)
+            \hfill \textit{Pyrenees}, {Oct. 2021}
+        \item International Symposium DEEP 2021
+            \hfill \textit{Nanjing}, {Oct. 2021}
+        \item University of Tokyo
+            \hfill \textit{Tokyo}, {March 2019}
+        \item Geoanalysis 2018 workshop (Application of LA-[MC]-ICP-MS to exploration needs)
+            \hfill \textit{Sydney}, {July 2018}
+    \end{itemize}
+
+    \textbf{Sessions convened at the Goldschmidt Conferences}\\
+    \say{\textit{Insights on the formation, preservation and transport of mantle compositional heterogeneities}} \hfill {2023}\\
+    \say{\textit{Mantle heterogeneity: origins and contribution to magmatism and implications for mantle dynamics}} \hfill {2021} \\
+    \say{\textit{Development and recycling of chemical and isotopic heterogeneities in the sub-arc mantle}} \hfill {2020}
+    
+    \textbf{Frequent reviewer for international scientific journals (23 reviews to date)}\\
+      Geology, J. of Petrology, Earth-Science Reviews, Chemical Geology, Scientific Reports, GSL Special Publications, Lithos, European J. of Mineralogy, EMU Notes in Mineralogy, American J. of Science, Frontiers, Ofioliti
+
+% SUPERVISION & TEACHING
+\section{Supervision \& teaching}
+    \textbf{H. Henry, PhD thesis}, Macquarie University
+    \hfill {2015 - 2018}\\ 
+    \say{\textit{Mantle pyroxenites: deformation and seismic properties}}
+    \hfill \textit{Sydney, Australie}
+
+    \textbf{M. Smith, MSc thesis}, Macquarie University
+    \hfill {2018}\\ 
+    \say{\textit{Dating the Donkerhuk granite, Damara Orogen, Namibia}}
+    \hfill \textit{Sydney, Australie}
+
+\textbf{Teaching}, Macquarie University
+\hfill {2014-2019}
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+        \item MSc level: modelling of trace-element fractionation during magmatic processes 
+        \item BSc level: field tutoring in structural and metamorphic geology (Hill End, Nouvelles-Galles du Sud)
+    \end{itemize}
+
+% ADDITIONAL TRAINING
+\section{Additional training}
+
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+        \item Laser Ablation ICP-MS imaging and its applications in petrology and volcanology (M. Petrelli, T. Ubide)
+        \item Oxygen fugacity: theory and practices in geosciences (C.A. McCammon, H.St.C. O’Neill, D.J. Frost)
+        \item Geochemical analysis and techniques (N.J. Pearson)
+        \item Research frontiers in geophysics and geodynamics (C.J. O’Neil)
+    \end{itemize}
+    
+%    
+%% LANGUAGES
+%\section{Languages}
+%
+%French, English, Spanish
+
+\center{\footnotesize Updated on \today}
+
+\end{document}
