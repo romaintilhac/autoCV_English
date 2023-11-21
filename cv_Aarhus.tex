@@ -12,7 +12,7 @@
 % ItalicFont = Fontin-Italic.otf
 % ]
 % {Fontin.otf}
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -32,7 +32,10 @@
 \usepackage{titlesec}				
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage[official]{eurosym} %euro
 \usepackage[unicode, draft=false]{hyperref}
+\usepackage{textcomp} %registered symbols
+\usepackage[super]{nth} %superscript nth
 \usepackage{color} %colors
     \definecolor{custom}{rgb}{0,0.2,0.6}
     \definecolor{back}{rgb}{0.85, 0.89, 0.95}
@@ -47,7 +50,7 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{15pt}{15pt}
 
 \setlength\bibitemsep{1em}
 
@@ -68,20 +71,20 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
 % RESEARCH INTERESTS
 \section{Research interests}
 
-    {My research focuses on the role of melt generation, migration and melt-rock interaction in the evolution and dynamics of the Earth's mantle. My approach combines a wide range of analytical techniques and numerical models, aiming to develop a petrologically consistent approach to \textit{computational geochemistry}. I am notably working on the formation and recycling of pyroxenites and their impact on oceanic basalt genesis and the geochemical cycles.}
+    {My research focuses on the role of melt generation, migration, melt-rock interaction and kinetics in the evolution and dynamics of the Earth's mantle. My approach combines a wide range of analytical techniques and numerical models to develop a petrologically consistent approach to geochemistry. One of my main interest is the role of pyroxenite formation on the building arc lithosphere and the impact of its recycling in the genesis of oceanic basalts and during geochemical cycles.}
 
 % EDUCATION
 \section{Education}
 
     {\bf PhD in Petrology and Geochemistry}, Macquarie University
     \hfill {2013 - 2017}\\
-    {\footnotesize Co-tutelle with Paul Sabatier University (Toulouse)}
+    {Co-tutelle with Paul Sabatier University}
     \hfill \textit{Sydney, Australia}\\
     \say{\textit{Petrology and geochemistry of pyroxenites from the Cabo Ortegal Complex, Spain}}
 
     {\bf BSc \& MSc in Earth and Planetary Sciences}, Paul Sabatier University
     \hfill {2006 - 2011}\\
-    \uline{Top of the class, With honours}
+    \uline{Top of the year, with honors}
     \hfill \textit{Toulouse, France}
      
 % EXPERIENCE
@@ -96,11 +99,11 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
     Kanazawa University, with \textbf{T. Morishita}
     \hfill \textit{Kanazawa, Japan}
     
-    \textbf{\textit{Research Associate}}
+    \textbf{Research Associate}
     \hfill {2017 - 2019}\\
     ARC Centre of Excellence CCFS/GEMOC, with \textbf{S.Y. O'Reilly} and \textbf{W.L. Griffin}
     \hfill \textit{Sydney, Australia}\\
-    \textit{TerraneChron} Manager
+    \uline{Manager of the geochronology group TerraneChron\textsuperscript{\textregistered}}
     
 % SKILLS
 \section{Scientific skills}
@@ -119,20 +122,20 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
         \item Modelling of elemental \& isotopic fractionation associated with magmatic processes
         \item Development of diffusion, percolation-diffusion, open-system melting \& mixed-source melting models
         \item Thermo-mecanical (reactive transport) modelling, thermodynamic modelling (pMELTS, PerpleX, Melt-PX)
-        \item Coding languages: Matlab, Python \& VBA + notions of Julia, Fortran \& HTML
+        \item Coding languages: Matlab, Python \& VBA (\textit{Geoch’Em} for Excel) + notions of Julia, Fortran \& HTML
         
     \end{itemize}
     
     \textbf{Field geology}
     \begin{itemize}[itemsep=0pt,parsep=2pt]
-        \item Magmatic and metamorphic petrology of mafic \& ultramafic terranes
+        \item Igneous and metamorphic petrology of mafic \& ultramafic terranes
         \item Field experiences: Pyrenees, Galicia, S. Spain, Italy, Czech Republic, California, Australia, Newfoundland
-        \item Micro-tectonics, sampling, mapping
+        \item Micro-tectonic analysis, sampling, mapping
     \end{itemize}
 
 % SKILLS
 \section{Languages}
-    French (mother tongue), English (fluent, IELTS 8.0), Spanish (fluent)
+    French (native language), English (fluent, IELTS = 8.0), Spanish (fluent)
 
 % GRANTS & REWARDS
 \section{Awards \& fundings}
@@ -140,7 +143,7 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
     \textbf{Research grant OCEANS (Principal Investigator)}
     \hfill {Sept. 2022}\\
     \say{\textit{M\underline{o}delling ar\underline{c} r\underline{e}cycling in the oceanic m\underline{a}ntle using radioge\underline{n}ic i\underline{s}otope systems}}\\
-    Spanish Ministry of Sciences, Innovation and Universities - 45 k€ (2 years)
+    Spanish Ministry of Sciences, Innovation and Universities - 45 k\geneuronarrow{} (2 years)
     
     \textbf{Post-doctoral fellowship \textit{Juan de la Cierva (Incorporación)}}
     \hfill {Aug. 2021}\\
@@ -163,56 +166,69 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
     International Macquarie Research Excellence Scholarship (3.5 years)
 
 % SUPERVISION & TEACHING
-\section{Supervision \& teaching}
-    \textbf{H. Henry, PhD thesis}, Macquarie University
-    \hfill {2015 - 2018}\\ 
-    \say{\textit{Mantle pyroxenites: deformation and seismic properties}}
-    \hfill \textit{Sydney, Australie}
-
-    \textbf{M. Smith, MSc thesis}, Macquarie University
-    \hfill {2018}\\ 
-    \say{\textit{Dating the Donkerhuk granite, Damara Orogen, Namibia}}
-    \hfill \textit{Sydney, Australie}
+\section{Teaching, supervision \& training}
 
 \textbf{Teaching}, Macquarie University
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item MSc Lectures (20h). Modelling of trace-element fractionation during magmatic processes \hfill 2017-2019 
-        \item BSc Field tutoring (80h). Structural and metamorphic geology (Hill End, NSW) \hfill 2014-2015 
+        \item Lectures (MSc, 8h): Modelling of trace-element fractionation during magmatic processes \hfill 2017 - 2019 
+        \item Field tutoring (BSc, 50h + exam marking): Structural and metamorphic geology (Hill End, NSW) \hfill 2014 - 2015 
     \end{itemize}
-
+    
+\textbf{Supervision}, Macquarie University
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+    \item PhD thesis (H. Henry)
+        \say{\textit{Mantle pyroxenites: deformation and seismic properties}}
+        \hfill {2015 - 2018}
+    \item MSc thesis (M. Smith)
+        \say{\textit{Dating the Donkerhuk granite, Damara Orogen, Namibia}}
+        \hfill {2018}
+    \end{itemize}
+    
+\textbf{Delivered training / Workshop organization}
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+        \item \textit{\nth{7} Orogenic Lherzolite conference}: Field trip to the Cabo Ortegal Complex
+        \hfill \textit{Oviedo}, {2024}
+        \item CNRS \textit{Forsterite 2021} workshop: Modelling of crust-mantle elemental transfers
+        \hfill \textit{Pyrenees}, {2021}
+        \item \textit{Geoanalysis 2018} workshop: Application of LA-[MC]-ICP-MS to exploration needs
+        \hfill \textit{Sydney}, {2018}
+    \end{itemize}
+    
 % OTHER ACTIVITIES
 \section{Academic responsabilities \& leadership}
 
-    \textbf{Invited seminars \& outreach}
+    \textbf{Invited seminars}
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item Goethe University (Geosciences colloquium series)
-            \hfill \textit{Frankfurt}, {Jan. 2023}
-        \item CNRS Forsterite workshop 2021 (Modelling of crust-mantle elemental transfers)
-            \hfill \textit{Pyrenees}, {Oct. 2021}
-        \item International Symposium DEEP 2021
-            \hfill \textit{Nanjing}, {Oct. 2021}
+        \item Goethe University geosciences colloquium series
+            \hfill \textit{Frankfurt}, {2023}
+        \item International Symposium \textit{DEEP 2021}
+            \hfill \textit{Nanjing}, {2021}
         \item University of Tokyo
-            \hfill \textit{Tokyo}, {Mar. 2019}
-        \item Geoanalysis 2018 workshop (Application of LA-[MC]-ICP-MS to exploration needs)
-            \hfill \textit{Sydney}, {Jul. 2018}
+            \hfill \textit{Tokyo}, {2019}
     \end{itemize}
 
-    \textbf{Sessions convened at the Goldschmidt Conferences}\\
-    \say{\textit{Insights on the formation, preservation and transport of mantle compositional heterogeneities}} \hfill {2023}\\
-    \say{\textit{Mantle heterogeneity: origins and contribution to magmatism and implications for mantle dynamics}} \hfill {2021} \\
-    \say{\textit{Development and recycling of chemical and isotopic heterogeneities in the sub-arc mantle}} \hfill {2020}
+    \textbf{Sessions convened at the \textit{Goldschmidt Conference}}
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+    \item 2f: Insights on the formation, preservation \& transport of mantle compositional heterogeneities
+        \hfill {2023}
+    \item 2e: Mantle heterogeneity: origins \& contribution to magmatism \& implications for mantle dynamics
+        \hfill {2021}
+    \item 3a: Development \& recycling of chemical \& isotopic heterogeneities in the sub-arc mantle
+        \hfill {2020}
+    \end{itemize}
     
-    \textbf{Frequent reviewer for international scientific journals (25 reviews to date)}\\
-    Geology, Journal of Petrology, Earth-Science Reviews, Contributions to Mineralogy and Petrology, Chemical Geology, Scientific Reports, Geological Society of London Special Publications, Lithos, European Journal of Mineralogy, European Mineralogical Union Notes in Mineralogy, American Journal of Science, Frontiers, Ofioliti
-
+    \textbf{Peer-reviews for international scientific journals}
+    \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
+    \item 24 reviews to date
+    \item \textit{Geology, Journal of Petrology, Earth-Science Reviews, Chemical Geology, Scientific Reports, GSL Special Publications, Lithos, European Journal of Mineralogy, EMU Notes in Mineralogy, American Journal of Science, Frontiers, Ofioliti}
+    \end{itemize}
 % ADDITIONAL TRAINING
-\section{Training courses}
+\section{Additional training}
 
     \begin{itemize}[label={},itemsep=0pt,parsep=0pt]
-        \item LA-ICP-MS imaging \& its applications in petrology \& volcanology (M. Petrelli, C. Stremtan, M. Šala)
-        \item Oxygen fugacity: theory \& practices in geosciences (C.A. McCammon, H.St.C. O’Neill, D.J. Frost)
-        \item Geochemical analysis \& techniques (N.J. Pearson)
-        \item Research frontiers in geophysics and geodynamics (C.J. O’Neil)
+        \item LA-ICP-MS imaging applications in petrology \& volcanology (M. Petrelli, C. Stremtan, M. Šala) \hfill {2023}
+        \item Oxygen fugacity: theory \& practices in geosciences (C.A. McCammon, H.St.C. O’Neill, D.J. Frost) \hfill {2014}
+        \item Geochemical analysis \& techniques (N.J. Pearson) / Geophysics \& geodynamics frontiers (C.J. O’Neil) \hfill {2014}
     \end{itemize}
     
 %    
@@ -221,6 +237,6 @@ Earth scientist $|$ Post-doctoral researcher (IACT/CSIC, Granada)\\[7.5pt]
 %
 %French, English, Spanish
 
-\center{\footnotesize Updated on \today}
+\vfill\center{\footnotesize Updated on \today}
 
 \end{document}
